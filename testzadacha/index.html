@@ -15,177 +15,134 @@
 </head>
 	<body>
 		<div class="wrapper">
-			<header class="header">
-	<div class="header__container _container">
-		
-	</div>
-</header>
 			<main class="page">
-				<section class="product_home big_Container">
-					<div class="product_home_cont">
-						<h3>С этим товаром покупают</h3>
-						<div class="product_home_cont_grid">
-							<div class="product_home_cont_grid_item">
-								<a href="" class="product_home_cont_grid_item_img">
-									<img src="img/image1(2).png" alt="product">
-								</a>
-								<a class="like" onclick="like(this)">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 8.4C1 4 4.5 3 6.5 3C9 3 11 5 12 6.5C13 5 15 3 17.5 3C19.5 3 23 4 23 8.4C23 15 12 21 12 21C12 21 1 15 1 8.4Z" stroke="#525252" stroke-width="2"/>
-									</svg>										
-								</a>
-								<p class="price"> 189 ₽
-									<span></span>
-								</p>
-								<a href="" class="product_name">Oral-B ополаскиватель для полости рта Комплекс LASTING FRESHNESS Arctic Mint 250 мл</a>
-								<div class="product_home_cont_grid_item_bottom">
-									<button class="addbasket" onclick="countshow(this)">В корзину</button>
-									<div class="counter">
-										<button class="countminus" onclick="countminus(this)">
-											<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<rect x="0.5" width="44" height="44" rx="3" fill="#F8F8F8"/>
-												<path d="M29.25 20.75H31.25C31.5815 20.75 31.8995 20.8817 32.1339 21.1161C32.3683 21.3505 32.5 21.6685 32.5 22C32.5 22.3315 32.3683 22.6495 32.1339 22.8839C31.8995 23.1183 31.5815 23.25 31.25 23.25H23.75H13.75C13.4185 23.25 13.1005 23.1183 12.8661 22.8839C12.6317 22.6495 12.5 22.3315 12.5 22C12.5 21.6685 12.6317 21.3505 12.8661 21.1161C13.1005 20.8817 13.4185 20.75 13.75 20.75H23.75H29.25Z" fill="#1A45DB"/>
-											</svg>													
-										</button>
-										<span class="counterspan">1</span>
-										<button class="countplus" onclick="countpluse(this)">
-											<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<rect x="0.5" width="44" height="44" rx="3" fill="#F8F8F8"/>
-												<path d="M31.25 20.75H23.75V13.25C23.75 12.9185 23.6183 12.6005 23.3839 12.3661C23.1495 12.1317 22.8315 12 22.5 12C22.1685 12 21.8505 12.1317 21.6161 12.3661C21.3817 12.6005 21.25 12.9185 21.25 13.25V20.75H13.75C13.4185 20.75 13.1005 20.8817 12.8661 21.1161C12.6317 21.3505 12.5 21.6685 12.5 22C12.5 22.3315 12.6317 22.6495 12.8661 22.8839C13.1005 23.1183 13.4185 23.25 13.75 23.25H21.25V30.75C21.25 31.0815 21.3817 31.3995 21.6161 31.6339C21.8505 31.8683 22.1685 32 22.5 32C22.8315 32 23.1495 31.8683 23.3839 31.6339C23.6183 31.3995 23.75 31.0815 23.75 30.75V23.25H31.25C31.5815 23.25 31.8995 23.1183 32.1339 22.8839C32.3683 22.6495 32.5 22.3315 32.5 22C32.5 21.6685 32.3683 21.3505 32.1339 21.1161C31.8995 20.8817 31.5815 20.75 31.25 20.75Z" fill="#1A45DB"/>
-											</svg>													
-										</button>
+				<section class="order_completion">
+					<div class="order_completion_container">
+						<h1>FTL: Прямая машина</h1>
+						<div class="order_completion_container_flex">
+							<form action="">
+								<div class="order_completion_container_item">
+									<h4>
+										<span>1</span>
+										Маршрут
+									</h4>
+									<label for="where"> Откуда
+										<input type="text" id="where" name="where">
+									</label>
+									<label for="going"> Куда
+										<input type="text" id="going" name="going">
+									</label>
+								</div>
+								<div class="order_completion_container_item">
+									<h4>
+										<span>2</span>
+										Транспорт
+									</h4>
+									<div class="order_completion_container_item_selectflex">
+										<label for="capacity"> Грузоподъёмность
+											<select name="capacity" id="capacity">
+												<option value="Не выбрана">Не выбрана</option>
+												<option value="Задняя">Задняя</option>
+												<option value="Задняя">Задняя</option>
+												<option value="Задняя">Задняя</option>
+												<option value="Задняя">Задняя</option>
+											</select>
+										</label>
+										<label for="loadingmethod"> Способ погрузки
+											<select name="loadingmethod" id="loadingmethod">
+												<option value="Не выбрана">Не выбрана</option>
+												<option value="Задняя">Задняя</option>
+												<option value="Задняя">Задняя</option>
+												<option value="Задняя">Задняя</option>
+												<option value="Задняя">Задняя</option>
+											</select>
+										</label>
 									</div>
 								</div>
-							</div>
-							<div class="product_home_cont_grid_item">
-								<a href="" class="product_home_cont_grid_item_img">
-									<img src="img/image4(1).png" alt="product">
-								</a>
-								<a class="like" onclick="like(this)">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 8.4C1 4 4.5 3 6.5 3C9 3 11 5 12 6.5C13 5 15 3 17.5 3C19.5 3 23 4 23 8.4C23 15 12 21 12 21C12 21 1 15 1 8.4Z" stroke="#525252" stroke-width="2"/>
-									</svg>										
-								</a>
-								<p class="price"> 801 ₽
-									<span></span>
-								</p>
-								<a href="" class="product_name">Сменные насадки для электрических зубных щеток Oral-B Sensi Ultrathin для бережной чистки, 2 шт.</a>
-								<div class="product_home_cont_grid_item_bottom">
-									<button class="addbasket" onclick="countshow(this)">В корзину</button>
-									<div class="counter">
-										<button class="countminus" onclick="countminus(this)">
-											<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<rect x="0.5" width="44" height="44" rx="3" fill="#F8F8F8"/>
-												<path d="M29.25 20.75H31.25C31.5815 20.75 31.8995 20.8817 32.1339 21.1161C32.3683 21.3505 32.5 21.6685 32.5 22C32.5 22.3315 32.3683 22.6495 32.1339 22.8839C31.8995 23.1183 31.5815 23.25 31.25 23.25H23.75H13.75C13.4185 23.25 13.1005 23.1183 12.8661 22.8839C12.6317 22.6495 12.5 22.3315 12.5 22C12.5 21.6685 12.6317 21.3505 12.8661 21.1161C13.1005 20.8817 13.4185 20.75 13.75 20.75H23.75H29.25Z" fill="#1A45DB"/>
-											</svg>													
-										</button>
-										<span class="counterspan">1</span>
-										<button class="countplus" onclick="countpluse(this)">
-											<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<rect x="0.5" width="44" height="44" rx="3" fill="#F8F8F8"/>
-												<path d="M31.25 20.75H23.75V13.25C23.75 12.9185 23.6183 12.6005 23.3839 12.3661C23.1495 12.1317 22.8315 12 22.5 12C22.1685 12 21.8505 12.1317 21.6161 12.3661C21.3817 12.6005 21.25 12.9185 21.25 13.25V20.75H13.75C13.4185 20.75 13.1005 20.8817 12.8661 21.1161C12.6317 21.3505 12.5 21.6685 12.5 22C12.5 22.3315 12.6317 22.6495 12.8661 22.8839C13.1005 23.1183 13.4185 23.25 13.75 23.25H21.25V30.75C21.25 31.0815 21.3817 31.3995 21.6161 31.6339C21.8505 31.8683 22.1685 32 22.5 32C22.8315 32 23.1495 31.8683 23.3839 31.6339C23.6183 31.3995 23.75 31.0815 23.75 30.75V23.25H31.25C31.5815 23.25 31.8995 23.1183 32.1339 22.8839C32.3683 22.6495 32.5 22.3315 32.5 22C32.5 21.6685 32.3683 21.3505 32.1339 21.1161C31.8995 20.8817 31.5815 20.75 31.25 20.75Z" fill="#1A45DB"/>
-											</svg>													
-										</button>
+								<div class="order_completion_container_item">
+									<h4>
+										<span>3</span>
+										Груз
+									</h4>
+									<label for="cargotype"> Тип груза
+										<select name="cargotype" id="cargotype">
+											<option value="Не выбрана">Не выбрана</option>
+											<option value="Задняя">Задняя</option>
+											<option value="Задняя">Задняя</option>
+											<option value="Задняя">Задняя</option>
+											<option value="Задняя">Задняя</option>
+										</select>
+									</label>
+									<div class="order_completion_container_item_selectflex">
+										<label for="hazardclass">Класс опасности
+											<select name="hazardclass" id="hazardclass">
+												<option value="Не выбрана">Не выбрана</option>
+												<option value="Класс 5 — Окисляющие вещества и органические перекиси">Класс 5 — Окисляющие вещества и органические перекиси</option>
+												<option value="Класс 5 — Окисляющие вещества и органические перекиси">Класс 5 — Окисляющие вещества и органические перекиси</option>
+												<option value="Класс 5 — Окисляющие вещества и органические перекиси">Класс 5 — Окисляющие вещества и органические перекиси</option>
+												<option value="Класс 5 — Окисляющие вещества и органические перекиси">Класс 5 — Окисляющие вещества и органические перекиси</option>
+											</select>
+										</label>
+										<label for=""> Объявленная ценность, ₽
+											<input type="text" id="" name="" placeholder="≥ 1">
+										</label>
+									</div>
+									<label for="" class="checkbox checkbox_show">
+										<input type="checkbox" id="" name="">
+										<span></span>
+										<p>Требуется температурный режим</p>
+									</label>
+									<div class="order_completion_container_item_selectflex _hidden">
+										<label for=""> От, °C
+											<input type="text" id="" name="" placeholder="≥ 1">
+										</label>
+										<label for=""> До, °C
+											<input type="text" id="" name="" placeholder="≥ 1">
+										</label>
 									</div>
 								</div>
-							</div>
-							<div class="product_home_cont_grid_item">
-								<a href="" class="product_home_cont_grid_item_img">
-									<img src="img/image3(1).png" alt="product">
-								</a>
-								<a class="like" onclick="like(this)">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 8.4C1 4 4.5 3 6.5 3C9 3 11 5 12 6.5C13 5 15 3 17.5 3C19.5 3 23 4 23 8.4C23 15 12 21 12 21C12 21 1 15 1 8.4Z" stroke="#525252" stroke-width="2"/>
-									</svg>										
-								</a>
-								<p class="price"> 2 289 ₽
-									<span></span>
-								</p>
-								<a href="" class="product_name">Электрическая зубная щетка Philips Sonicare 2 Series Gum Health HX6232/20 с двумя насадками, черный</a>
-								<div class="product_home_cont_grid_item_bottom">
-									<button class="addbasket" onclick="countshow(this)">В корзину</button>
-									<div class="counter">
-										<button class="countminus" onclick="countminus(this)">
-											<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<rect x="0.5" width="44" height="44" rx="3" fill="#F8F8F8"/>
-												<path d="M29.25 20.75H31.25C31.5815 20.75 31.8995 20.8817 32.1339 21.1161C32.3683 21.3505 32.5 21.6685 32.5 22C32.5 22.3315 32.3683 22.6495 32.1339 22.8839C31.8995 23.1183 31.5815 23.25 31.25 23.25H23.75H13.75C13.4185 23.25 13.1005 23.1183 12.8661 22.8839C12.6317 22.6495 12.5 22.3315 12.5 22C12.5 21.6685 12.6317 21.3505 12.8661 21.1161C13.1005 20.8817 13.4185 20.75 13.75 20.75H23.75H29.25Z" fill="#1A45DB"/>
-											</svg>													
-										</button>
-										<span class="counterspan">1</span>
-										<button class="countplus" onclick="countpluse(this)">
-											<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<rect x="0.5" width="44" height="44" rx="3" fill="#F8F8F8"/>
-												<path d="M31.25 20.75H23.75V13.25C23.75 12.9185 23.6183 12.6005 23.3839 12.3661C23.1495 12.1317 22.8315 12 22.5 12C22.1685 12 21.8505 12.1317 21.6161 12.3661C21.3817 12.6005 21.25 12.9185 21.25 13.25V20.75H13.75C13.4185 20.75 13.1005 20.8817 12.8661 21.1161C12.6317 21.3505 12.5 21.6685 12.5 22C12.5 22.3315 12.6317 22.6495 12.8661 22.8839C13.1005 23.1183 13.4185 23.25 13.75 23.25H21.25V30.75C21.25 31.0815 21.3817 31.3995 21.6161 31.6339C21.8505 31.8683 22.1685 32 22.5 32C22.8315 32 23.1495 31.8683 23.3839 31.6339C23.6183 31.3995 23.75 31.0815 23.75 30.75V23.25H31.25C31.5815 23.25 31.8995 23.1183 32.1339 22.8839C32.3683 22.6495 32.5 22.3315 32.5 22C32.5 21.6685 32.3683 21.3505 32.1339 21.1161C31.8995 20.8817 31.5815 20.75 31.25 20.75Z" fill="#1A45DB"/>
-											</svg>													
-										</button>
+								<div class="order_completion_container_item">
+									<h4> 
+										<span>4</span>
+										Время
+									</h4>
+									<div class="order_completion_container_item_adreas">
+										<div class="order_completion_container_item_adreas_title">
+											<p>Когда прибыть на точку</p>
+											<p>700 км в день</p>
+										</div>
+										<div class="order_completion_container_item_adreas_box">
+											<label for="" class="checkbox">
+												<input type="checkbox">
+												<span></span>
+												<p>Адрес не указан</p>
+												<p>НЕ ВЫБРАНО</p>
+											</label>
+										</div>
+										<div class="order_completion_container_item_adreas_box">
+											<label for="" class="checkbox">
+												<input type="checkbox">
+												<span></span>
+												<p>Адрес не указан</p>
+												<p>НЕ ВЫБРАНО</p>
+											</label>
+										</div>
+									</div>
+									<div class="order_completion_container_item_comment">
+										<label for=""> Комментарий к заказу
+											<textarea name="" id="" placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+										</label>
 									</div>
 								</div>
-							</div>
-							<div class="product_home_cont_grid_item">
-								<a href="" class="product_home_cont_grid_item_img">
-									<img src="img/image2(3).png" alt="product">
-								</a>
-								<a class="like" onclick="like(this)">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 8.4C1 4 4.5 3 6.5 3C9 3 11 5 12 6.5C13 5 15 3 17.5 3C19.5 3 23 4 23 8.4C23 15 12 21 12 21C12 21 1 15 1 8.4Z" stroke="#525252" stroke-width="2"/>
-									</svg>										
-								</a>
-								<p class="price pricesalle"> 385 ₽
-									<span>540 ₽</span>
-								</p>
-								<a href="" class="product_name">Oral-B Зубная нить Essential Floss вощеная, мята, 2шт</a>
-								<div class="product_home_cont_grid_item_bottom">
-									<button class="addbasket" onclick="countshow(this)">В корзину</button>
-									<div class="counter">
-										<button class="countminus" onclick="countminus(this)">
-											<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<rect x="0.5" width="44" height="44" rx="3" fill="#F8F8F8"/>
-												<path d="M29.25 20.75H31.25C31.5815 20.75 31.8995 20.8817 32.1339 21.1161C32.3683 21.3505 32.5 21.6685 32.5 22C32.5 22.3315 32.3683 22.6495 32.1339 22.8839C31.8995 23.1183 31.5815 23.25 31.25 23.25H23.75H13.75C13.4185 23.25 13.1005 23.1183 12.8661 22.8839C12.6317 22.6495 12.5 22.3315 12.5 22C12.5 21.6685 12.6317 21.3505 12.8661 21.1161C13.1005 20.8817 13.4185 20.75 13.75 20.75H23.75H29.25Z" fill="#1A45DB"/>
-											</svg>													
-										</button>
-										<span class="counterspan">1</span>
-										<button class="countplus" onclick="countpluse(this)">
-											<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<rect x="0.5" width="44" height="44" rx="3" fill="#F8F8F8"/>
-												<path d="M31.25 20.75H23.75V13.25C23.75 12.9185 23.6183 12.6005 23.3839 12.3661C23.1495 12.1317 22.8315 12 22.5 12C22.1685 12 21.8505 12.1317 21.6161 12.3661C21.3817 12.6005 21.25 12.9185 21.25 13.25V20.75H13.75C13.4185 20.75 13.1005 20.8817 12.8661 21.1161C12.6317 21.3505 12.5 21.6685 12.5 22C12.5 22.3315 12.6317 22.6495 12.8661 22.8839C13.1005 23.1183 13.4185 23.25 13.75 23.25H21.25V30.75C21.25 31.0815 21.3817 31.3995 21.6161 31.6339C21.8505 31.8683 22.1685 32 22.5 32C22.8315 32 23.1495 31.8683 23.3839 31.6339C23.6183 31.3995 23.75 31.0815 23.75 30.75V23.25H31.25C31.5815 23.25 31.8995 23.1183 32.1339 22.8839C32.3683 22.6495 32.5 22.3315 32.5 22C32.5 21.6685 32.3683 21.3505 32.1339 21.1161C31.8995 20.8817 31.5815 20.75 31.25 20.75Z" fill="#1A45DB"/>
-											</svg>													
-										</button>
-									</div>
-								</div>
+							</form>
+							<div class="order_completion_container_flex_text">
+								<p>Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.</p>
 							</div>
 						</div>
 					</div>
 				</section>
 			</main>
-			<footer class="footer">
-	<div class="footer__container _container">
-
-	</div>
-</footer>
 		</div>
-		<div class="popup popup_popup">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close"></div>
-		</div>
-	</div>
-</div>
-<div class="popup popup_massagename-message">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close"></div>
-		</div>
-	</div>
-</div>
-<div class="popup popup_video">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video"></div>
-			<div class="popup__video _video"></div>
-		</div>
-	</div>
-</div>
-
 		<!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -216,7 +216,7 @@ function select_item(select) {
 	if (select_type == 'input') {
 		select_type_content = '<div class="select__value icon-select-arrow"><input autocomplete="off" type="text" name="form[]" value="' + select_selected_text + '" data-error="Ошибка" data-value="' + select_selected_text + '" class="select__input"></div>';
 	} else {
-		select_type_content = '<div class="select__value icon-select-arrow"><span>' + select_selected_text + '</span></div>';
+		select_type_content = '<div class="select__value icon-select-arrow"><span class="select__value_span" >' + select_selected_text + '</span></div>';
 	}
 
 	select_parent.insertAdjacentHTML('beforeend',
@@ -252,7 +252,8 @@ function select_actions(original, select) {
 				originalOptions[index].setAttribute('selected', 'selected');
 			}
 		}
-		select.querySelector('.select__value').innerHTML = '<span>' + selectedOptionsText + '</span>';
+		select.querySelector('.select__value').innerHTML = '<span class="select__value_span">' + selectedOptionsText + '</span>';
+
 	}
 	function selectItemActions(type) {
 		if (!type) {
@@ -294,7 +295,7 @@ function select_actions(original, select) {
 					select_option.classList.toggle('_selected');
 					selectMultiItems();
 				} else {
-					select.querySelector('.select__value').innerHTML = '<span>' + select_option_text + '</span>';
+					select.querySelector('.select__value').innerHTML = '<span class="select__value_span_activ">' + select_option_text + '</span>';
 					original.value = select_option_value;
 					select_option.style.display = 'none';
 				}
